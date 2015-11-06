@@ -34,5 +34,8 @@
 # File system
 .DS_Store
 
+# ipython
+slides/.ipynb_checkpoints/*
+
 # Project output
 code/out/*

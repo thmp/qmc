@@ -34,10 +34,10 @@ double norm() {
 	}
 }
 
-void initialize() {
+void init() {
 	srand(time(NULL));
 
-	N = 10;
+	N = 300;
 
 	x = new double[N];
 	for (int i = 0; i < N; i++) {
@@ -80,7 +80,13 @@ void step_montecarlo() {
 
 int main(int argc, char* argv[]) {
 
-	initialize();
+	init();
+	for (int i = 0; i < 1e4; i++) {
+		step_montecarlo();
+		if (i % 1000 == 0) {
+			cout << i << endl;
+		}
+	}
 
 	return 0;
 }
