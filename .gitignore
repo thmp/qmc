@@ -36,6 +36,7 @@
 
 # ipython
 slides/.ipynb_checkpoints/*
+.ipynb_checkpoints/*
 
 # Project output
 code/out/*
